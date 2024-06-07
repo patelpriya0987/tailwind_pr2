@@ -7,13 +7,14 @@
     <title>Restaurant Website</title>
     <link rel="shortcut icon" href="images/banner/Logo.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/fonts.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- owl carousal -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .swiper-pagination-bullet {
             display: inline-block;
@@ -33,7 +34,24 @@
         }
         .swiper-button-next , .swiper-button-prev {
             color: white;
-            
+        }
+        .swiper-button-next, .swiper-button-prev{
+            width: 45px !important;
+            height: 45px !important;
+        }
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+            content: '';
+            width: 45px !important;
+            height: 45px !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+            background-image: url('../dist/images/banner/left-arrow.svg');
+        }
+        .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+            background-image: url('../dist/images/banner/right-arrow.svg');
         }
     </style>
 </head>

@@ -18,7 +18,7 @@ $(window).scroll(function(){
 
     }else{
         
-        $('.header').removeClass("fixed-header");
+        $('.header').removeClass("fixed_header");
 
     }
 
